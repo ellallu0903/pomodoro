@@ -8,6 +8,8 @@
           b-navbar-nav
             //- https://bootstrap-vue.org/docs/components/nav#comp-ref-b-nav-item
             b-nav-item(to='/list' active-class="active") 待辦
-            b-nav-item(to='/setting' active-class="active") 設定
-    router-view
+            b-nav-item(to='/settings' active-class="active") 設定
+    //- keep-alive 避免元件在換頁時被銷毀
+    keep-alive
+      router-view
 </template>
